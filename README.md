@@ -33,7 +33,7 @@ assets/                 # Assets of the site, images go here
 │   ├──font.ttf   
 ├──someimage.png
 ├──anotherimage.png   
-├──lastimage.png   
+└──lastimage.png   
 
 
 controllers/            # All controllers go here   
@@ -44,7 +44,7 @@ views/                  # Directory for all your .bite route files
 ├──partials/            # Directory for all your partial .bite files   
 │   ├──footer.bite           
 ├──home.bite            # Default home .bite for fallback
-├──base.bite            # Base file that carries CSS, js, includes, meta tags, etc   
+└──base.bite            # Base file that carries CSS, js, includes, meta tags, etc   
    
 config.php              # Config file for your delimiters and db info     
 index.php               # Renderer    

@@ -1,4 +1,5 @@
 <?php
+
 include 'controller/render.php';
 
 $route = $_REQUEST['route'];

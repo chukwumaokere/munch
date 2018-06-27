@@ -13,6 +13,6 @@
 			</form>
 		</div>
 	</div>
+	{{loadPartial footer}}
 </div>
 
-[[loadPartial footer]]

@@ -1,4 +1,3 @@
-<?php include '/config.php'; ?>
 <!DOCTYPE html>
 <head>
         <meta property="og:image" content="https://lh4.ggpht.com/7jTO2Act5ERDO3gfvKoS1XHEkJ7X2UQkS58ACKxV8mEJN-dI5G-eLpXqiMyadFsXbAQY">
@@ -29,6 +28,6 @@
 <title>Socialites - All your social media in one place, finally.</title>
 
 <body>
-	<?php $delimiterStart . "content" . $delimiterEnd ?>
+	{{content}}
 </body>
 </html>

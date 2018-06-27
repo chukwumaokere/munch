@@ -25,6 +25,7 @@ If you want to create your own functions that will generate some bite code, you 
 If you do create your own standalone controller, make sure to reference it in render.php using an `include`
 
 ## Folder Structure:   
+```
 assets/                 # Assets of the site, images go here   
 ├──favicons/            # Favicons on the tab   
 │   ├──favicon.ico   
@@ -33,7 +34,8 @@ assets/                 # Assets of the site, images go here
 ├──someimage.png
 ├──anotherimage.png   
 ├──lastimage.png   
-   
+
+
 controllers/            # All controllers go here   
 ├──maincontroller.php   # Main controller   
 └──render.php           # Renderer thats used by index.php   
@@ -47,6 +49,5 @@ views/                  # Directory for all your .bite route files
 config.php              # Config file for your delimiters and db info     
 index.php               # Renderer    
 styles.css              # Your CSS goes here    
-   
-      
+```      
 ## More demos and examples coming soon

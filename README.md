@@ -30,9 +30,10 @@ assets/
 ------favicon.ico   
 ---fonts/   
 ------font.ttf   
-someimage.png   
-anotherimage.png   
-lastimage.png   
+---someimage.png   
+---anotherimage.png   
+---lastimage.png   
+   
 controllers/   
 ---maincontroller.php   
 ---render.php   
@@ -42,6 +43,7 @@ views/
 -----footer.bite   
 ---home.bite   
 ---base.bite   
+   
 config.php   
 index.php   
 styles.css   

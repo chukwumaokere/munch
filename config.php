@@ -7,4 +7,10 @@ $delimiterStart='{{';
 $delimiterEnd='}}';
 
 //Database Information
+$servername = 'localhost';
+$dbusername   = '';
+$dbpassword   = '';
+$dbname     = '';
+$link = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
+$db = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 

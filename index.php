@@ -1,6 +1,6 @@
 <?php
 
-include 'controller/render.php';
+include 'controllers/render.php';
 
 $route = $_REQUEST['route'];
 

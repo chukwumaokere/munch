@@ -8,6 +8,9 @@ function renderPage($route){
 
 	$base=file_get_contents("views/base.bite");
 	$content = file_get_contents("views/$route.bite");
+	if ($content == false){
+		$content = file_get_contents("views/404.bite");
+	}
 
 	$delimitedString=$delimiterStart."content".$delimiterEnd;
 	

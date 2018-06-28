@@ -1,0 +1,14 @@
+<div class="main">
+        <div class="main-content-thanks">
+                <div class="main-content-right-thanks">
+                        <h1>404 Error :( </h1>
+                        <h2 class="sub-header">That page does not exist</h2>
+                        <h3 class="sub-header-two">We wish it did though</h3>
+                        <h3 class="sub-header-two">How did you get here anyway...?</h3>
+			<h3 class="sub-header-two">You've seen too much.</h3>
+                        <br><br>
+                        <h3 class="sub-header-two">Redirecting back to socialite.app...</h3>
+                        <h3 class=""><a href="/">Click here if you arent redirected</a></h3>
+                </div>
+        </div>
+</div>

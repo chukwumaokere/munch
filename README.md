@@ -17,7 +17,10 @@ This file is the file is the base of your code. It carries over any of your CSS,
 ## How It Works: 
 `index.php` is just a routing tool that loads the proper `.bite`. If there is no specified `.bite`, it defaults to look for `home.bite`.    
 
-Routing works like this: http://munch.chuckokere.com/?route=thanks. This would navigate the user to the thank-you page at `views/thanks.bite`    
+I've updated the source code to have an .htaccess that will handle routing through api.php   
+Its the preliminary to a proper api.    
+Routing now works like this: http://munch.chuckokere.com/thanks. This would navigate the user to the thank-you page at `views/thanks.bite`   
+~~Routing works like this: http://munch.chuckokere.com/?route=thanks. This would navigate the user to the thank-you page at `views/thanks.bite`~~    
 
 If you are just trying to load partials, place them in `views/partials/` Then make sure to call them in the respective `.bite` file using your delimiters (by default, its like this: `{{loadPartial partialName}}` ex: `{{loadPartial footer}}`). See `views/home.bite` for an example of how I generate a footer across pages.   
 This way if you need to update the footer, you only need to do it in the single file `views/partials/footer.bite` and it carries over everywhere.   

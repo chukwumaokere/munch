@@ -7,7 +7,7 @@
 			<h1>Socialites</h1>
 			<h2 class="sub-header">All your social media in one place, finally.</h2>
 			<h3 class="sub-header-two">Coming Soon...</h3>
-			<form class="signer" action="./register.php">
+			<form class="signer" action="register.php">
 				<input type="email" class="form-control" name="email-address" placeholder="Sign up for updates!" >
 				<button type="submit" class="btn btn-primary" >Sign me up!</button>
 			</form>

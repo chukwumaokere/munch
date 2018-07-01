@@ -14,14 +14,15 @@ $htmlContent = file_get_contents("assets/emailtemplate.html");
 if($email_address){
         $useradded = addUser($email_address);
         if($useradded == 1){
-           //     $result = $mgClient->sendMessage($domain,
+           /*     $result = $mgClient->sendMessage($domain,
                     array('from'    => 'Socialites Information <info@socialites.app>',
                             'to'      => "$email_address",
                             'subject' => 'Welcome to Socialites Updates!',
                             'html' => $htmlContent,
                         )
                 );
-                header('Location: ./thanks.php');
+		*/
+                header('Location: /thanks');
         }else{
                 $tmp = print_r($useradded, TRUE);
                 echo "$tmp";

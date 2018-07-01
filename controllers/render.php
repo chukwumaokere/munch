@@ -1,6 +1,9 @@
 <?php
 include 'maincontroller.php';
 include __DIR__ . '/../config.php';
+require "vendor/autoload.php";
+use PHPHtmlParser\Dom;
+use PHPHtmlParser\Collection;
 global $delimiterStart, $delimiterEnd, $db;
 
 function renderPage($route){
@@ -26,7 +29,21 @@ function renderPage($route){
 	foreach($matches[0] as $match){
 		$page=str_replace("$match", '', $page);
 	}
+	
+	//Get actions
+	
+	$dom = new Dom();
 
+	$dom->loadFromFile("views/$route.bite");
+	$cont = $dom->find('form')[0];
+	if($cont){
+		$cont2 = $cont->getAttribute('action');
+		if($cont2){
+			$page=str_replace("$cont2", "actions/$cont2", $page);
+			$cont->delete();
+			unset($cont);
+		}
+	}
 	//Prints the page
 	echo $page;
 	

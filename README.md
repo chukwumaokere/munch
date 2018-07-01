@@ -48,7 +48,9 @@ views/                  # Directory for all your .bite route files
 │   ├──footer.bite           
 ├──home.bite            # Default home .bite for fallback
 └──base.bite            # Base file that carries CSS, js, includes, meta tags, etc   
-   
+
+actions/                # This is where you put your action files, and reference them in .bite with action="...php"    
+
 config.php              # Config file for your delimiters and db info     
 index.php               # Renderer    
 styles.css              # Your CSS goes here    

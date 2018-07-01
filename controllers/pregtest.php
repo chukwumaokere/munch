@@ -1,4 +1,7 @@
 <?php
+require "../vendor/autoload.php";
+use PHPHtmlParser\Dom;
+use PHPHtmlParser\Collection;
 /*
 $k="[[http://whoreallyknows.com/mcree.png]]";
 
@@ -37,4 +40,19 @@ foreach($matches as $match){
 	//var_dump($match);
 }
 
-var_dump($matches);
+//var_dump($matches);
+
+
+$dom = new Dom();
+
+$dom->loadStr("<html><form action='register.php' id='signup'> ... </form> <br> <form action = \"forgotpass.php\" id=\"signup\"> ... </form></html>", []);
+$dom->loadFromFile('../views/home.bite');
+$cont = $dom->find('form')[0];
+
+//var_dump($cont->collection[0]['tag']['attr']['action']['value']);
+$cont2 = $cont->getAttribute('action');
+
+var_dump($cont2);
+$cont->delete();
+unset($cont);
+

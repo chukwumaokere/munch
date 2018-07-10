@@ -1,10 +1,10 @@
-# Munch
+# mnch
 ## A lightweight, easy-to-use, open source template engine + PHP based framework to expedite site creation.
 
 With munch, you get to create your own template system using PHP as the preprocessor, as PHP was intended to be used.   
 Natively supports HTML/CSS/JS
 
-See a live example at http://munch.chuckokere.com which is a munched version of of https://socialites.app
+See a live example at https://munchphp.com and https://socialites.app which both run on munch php.
 
 ## How To Use:
 ### Edit `config.php`

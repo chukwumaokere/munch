@@ -51,6 +51,8 @@ views/                  # Directory for all your .bite route files
 
 actions/                # This is where you put your action files, and reference them in .bite with action="...php"    
 
+models/                 # This is where you put your models. (In progress)
+
 config.php              # Config file for your delimiters and db info     
 index.php               # Renderer    
 styles.css              # Your CSS goes here    
